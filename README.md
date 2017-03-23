@@ -1,12 +1,11 @@
 [![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/Lexigram/functions?utm_source=RapidAPIGitHub_LexigramFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
 # Lexigram Package
 
-* Domain: lexigram.io
+* Domain: [Lexigram](http://www.lexigram.io/)
 * Credentials: apiKey
 
 ## How to get credentials: 
-0. Item one 
-1. Item two
+1. Get appKey from https://app.lexigram.io/#/account 
  
 ## Lexigram.search
 Run a keyword search over the Lexigram medical knowledge base. The keywords are matched against labels and synonyms of medical concepts providing a list ranked by relevance. Our relevance scoring mechanism uses a decay function tuned to term relevance and term proximity of the input keywords that works very well for medical knowledge.
