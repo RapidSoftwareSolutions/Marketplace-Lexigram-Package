@@ -19,9 +19,9 @@ $app->post('/api/Lexigram/getConceptDescendants', function ($request, $response)
     $headers['Authorization'] = 'Bearer ' . $postData['args']['apiKey'];
     $headers['Content-type'] = 'application/json';
 
-    $params['page'] = 1;
+    $params = [];
     if (isset($postData['args']['page']) && strlen($postData['args']['page']) > 0) {
-        $params['page'] = $postData['args']['page'];
+        $params['page'] = (int)$postData['args']['page'] ? (int)$postData['args']['page'] : 1;
     }
 
     try {
