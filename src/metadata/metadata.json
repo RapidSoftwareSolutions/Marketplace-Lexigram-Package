@@ -195,7 +195,7 @@
       ]
     },
     {
-      "name": "extractEntities",
+      "name": "highlightEntities",
       "description": "Returns HTML enriched versions of the input text surrounding found concepts in span tags to aid visualization of the data.",
       "args": [
         {
