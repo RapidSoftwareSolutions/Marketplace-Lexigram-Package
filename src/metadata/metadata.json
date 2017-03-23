@@ -205,12 +205,6 @@
           "required": true
         },
         {
-          "name": "conceptId",
-          "type": "String",
-          "info": "Concept ID",
-          "required": true
-        },
-        {
           "name": "query",
           "type": "String",
           "info": "Text to search",

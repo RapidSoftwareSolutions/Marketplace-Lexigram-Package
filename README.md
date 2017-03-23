@@ -60,7 +60,6 @@ Returns HTML enriched versions of the input text surrounding found concepts in s
 | Field         | Type   | Description
 |---------------|--------|----------
 | apiKey        | String | Api key
-| conceptId     | String | Concept ID
 | query         | String | Text to search
 | withContext   | Boolean| True performs contextulization and includes contexts in the result.
 | withMatchLogic| String | 'longest' expands to the longest unique match during concept detection. 'ignore-length' returns all detected concepts regardless if a concept is contained or part of a larger concept e.g. 'Kidney Failure' will return 'kidney', 'Failure', and 'Kidney Failure' instead of only 'kidney Failure'. Allowed: longest, ignore-length. Default: longest
