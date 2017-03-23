@@ -54,7 +54,7 @@ The core of our data extraction API. Matches the input text against concepts in 
 | withMatchLogic| String | 'longest' expands to the longest unique match during concept detection. 'ignore-length' returns all detected concepts regardless if a concept is contained or part of a larger concept e.g. 'Kidney Failure' will return 'kidney', 'Failure', and 'Kidney Failure' instead of only 'kidney Failure'. Allowed: longest, ignore-length. Default: longest
 | withText      | Boolean| true returns the orginal text in the response.
 
-## Lexigram.extractEntities
+## Lexigram.highlightEntities
 Returns HTML enriched versions of the input text surrounding found concepts in span tags to aid visualization of the data.
 
 | Field         | Type   | Description
