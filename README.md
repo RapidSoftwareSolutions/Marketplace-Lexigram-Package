@@ -5,7 +5,7 @@
 * Credentials: apiKey
 
 ## How to get credentials: 
-1. Get appKey from https://app.lexigram.io/#/account 
+1. Get apiKey from https://app.lexigram.io/#/account 
  
 ## Lexigram.search
 Run a keyword search over the Lexigram medical knowledge base. The keywords are matched against labels and synonyms of medical concepts providing a list ranked by relevance. Our relevance scoring mechanism uses a decay function tuned to term relevance and term proximity of the input keywords that works very well for medical knowledge.
