@@ -12,7 +12,7 @@ Run a keyword search over the Lexigram medical knowledge base. The keywords are 
 
 | Field | Type  | Description
 |-------|-------|----------
-| apiKey| String| Api key
+| apiKey| credentials| Api key
 | query | String| Text to query. Example: aspirin
 | limit | Number| Limits the result. Default: 20
 
@@ -21,7 +21,7 @@ Lookup Lexigraph concepts. All Lexigraph concepts that have an lexigraph_id begi
 
 | Field    | Type  | Description
 |----------|-------|----------
-| apiKey   | String| Api key
+| apiKey   | credentials| Api key
 | conceptId| String| Concept ID
 
 ## Lexigram.getConceptAncestors
@@ -29,7 +29,7 @@ Returns a paginated list (1000 results per page) of all ancestors or descendants
 
 | Field    | Type  | Description
 |----------|-------|----------
-| apiKey   | String| Api key
+| apiKey   | credentials| Api key
 | conceptId| String| Concept ID
 | page     | Number| Pagination page
 
@@ -38,7 +38,7 @@ Returns a paginated list (1000 results per page) of all ancestors or descendants
 
 | Field    | Type  | Description
 |----------|-------|----------
-| apiKey   | String| Api key
+| apiKey   | credentials| Api key
 | conceptId| String| Concept ID
 | page     | Number| Pagination page
 
@@ -47,7 +47,7 @@ The core of our data extraction API. Matches the input text against concepts in 
 
 | Field         | Type   | Description
 |---------------|--------|----------
-| apiKey        | String | Api key
+| apiKey        | credentials | Api key
 | conceptId     | String | Concept ID
 | query         | String | Text to search
 | withContext   | Boolean| True performs contextulization and includes contexts in the result.
@@ -59,7 +59,7 @@ Returns HTML enriched versions of the input text surrounding found concepts in s
 
 | Field         | Type   | Description
 |---------------|--------|----------
-| apiKey        | String | Api key
+| apiKey        | credentials | Api key
 | query         | String | Text to search
 | withContext   | Boolean| True performs contextulization and includes contexts in the result.
 | withMatchLogic| String | 'longest' expands to the longest unique match during concept detection. 'ignore-length' returns all detected concepts regardless if a concept is contained or part of a larger concept e.g. 'Kidney Failure' will return 'kidney', 'Failure', and 'Kidney Failure' instead of only 'kidney Failure'. Allowed: longest, ignore-length. Default: longest
