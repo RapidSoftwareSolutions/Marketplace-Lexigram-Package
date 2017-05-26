@@ -184,7 +184,7 @@
         {
           "name": "withMatchLogic",
           "type": "Select",
-          "option": ["longest", "ignore-length"],
+          "options": ["longest", "ignore-length"],
           "info": "'longest' expands to the longest unique match during concept detection. 'ignore-length' returns all detected concepts regardless if a concept is contained or part of a larger concept e.g. 'Kidney Failure' will return 'kidney', 'Failure', and 'Kidney Failure' instead of only 'kidney Failure'. Allowed: longest, ignore-length. Default: longest",
           "required": false
         },
@@ -231,7 +231,7 @@
         {
           "name": "withMatchLogic",
           "type": "Select",
-          "option": ["longest", "ignore-length"],
+          "options": ["longest", "ignore-length"],
           "info": "'longest' expands to the longest unique match during concept detection. 'ignore-length' returns all detected concepts regardless if a concept is contained or part of a larger concept e.g. 'Kidney Failure' will return 'kidney', 'Failure', and 'Kidney Failure' instead of only 'kidney Failure'. Allowed: longest, ignore-length. Default: longest",
           "required": false
         }
