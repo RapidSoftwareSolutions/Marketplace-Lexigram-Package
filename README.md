@@ -6,6 +6,15 @@
 
 ## How to get credentials: 
 1. Get apiKey from [Lexigram](https://app.lexigram.io/#/account) 
+
+## Custom datatypes: 
+|Datatype|Description|Example
+|--------|-----------|----------
+|Datepicker|String which includes date and time|```2016-05-28 00:00:00```
+|Map|String which includes latitude and longitude coma separated|```50.37, 26.56```
+|List|Simple array|```["123", "sample"]``` 
+|Select|String with predefined values|```sample```
+|Array|Array of objects|```[{"Second name":"123","Age":"12","Photo":"sdf","Draft":"sdfsdf"},{"name":"adi","Second name":"bla","Age":"4","Photo":"asfserwe","Draft":"sdfsdf"}] ``` 
  
 ## Lexigram.search
 Run a keyword search over the Lexigram medical knowledge base. The keywords are matched against labels and synonyms of medical concepts providing a list ranked by relevance. Our relevance scoring mechanism uses a decay function tuned to term relevance and term proximity of the input keywords that works very well for medical knowledge.
@@ -51,7 +60,7 @@ The core of our data extraction API. Matches the input text against concepts in 
 | conceptId     | String | Concept ID
 | query         | String | Text to search
 | withContext   | Boolean| True performs contextulization and includes contexts in the result.
-| withMatchLogic| String | 'longest' expands to the longest unique match during concept detection. 'ignore-length' returns all detected concepts regardless if a concept is contained or part of a larger concept e.g. 'Kidney Failure' will return 'kidney', 'Failure', and 'Kidney Failure' instead of only 'kidney Failure'. Allowed: longest, ignore-length. Default: longest
+| withMatchLogic| Select | 'longest' expands to the longest unique match during concept detection. 'ignore-length' returns all detected concepts regardless if a concept is contained or part of a larger concept e.g. 'Kidney Failure' will return 'kidney', 'Failure', and 'Kidney Failure' instead of only 'kidney Failure'. Allowed: longest, ignore-length. Default: longest
 | withText      | Boolean| true returns the orginal text in the response.
 
 ## Lexigram.highlightEntities
@@ -62,5 +71,5 @@ Returns HTML enriched versions of the input text surrounding found concepts in s
 | apiKey        | credentials | Api key
 | query         | String | Text to search
 | withContext   | Boolean| True performs contextulization and includes contexts in the result.
-| withMatchLogic| String | 'longest' expands to the longest unique match during concept detection. 'ignore-length' returns all detected concepts regardless if a concept is contained or part of a larger concept e.g. 'Kidney Failure' will return 'kidney', 'Failure', and 'Kidney Failure' instead of only 'kidney Failure'. Allowed: longest, ignore-length. Default: longest
+| withMatchLogic| Select | 'longest' expands to the longest unique match during concept detection. 'ignore-length' returns all detected concepts regardless if a concept is contained or part of a larger concept e.g. 'Kidney Failure' will return 'kidney', 'Failure', and 'Kidney Failure' instead of only 'kidney Failure'. Allowed: longest, ignore-length. Default: longest
 
